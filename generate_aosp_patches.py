@@ -48,7 +48,7 @@ def config_logfile():
 	handler.setLevel(g_loglevel)
 	formatter = logging.Formatter("%(asctime)-15s %(levelname)-8s %(message)s")
 	handler.setFormatter(formatter)
-	stdout.addHandler(handler)
+	stdoutlog.addHandler(handler)
 
 def os_system_cmd(cmd):
 	logging.info("cmd: %s"%(cmd))
